@@ -1,0 +1,461 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    color: #222;
+}
+
+
+nav {
+    background: #111;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: orange;
+}
+
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: orange;
+    color: white;
+    background-image: url(./images/backgroung.jpg);
+    background-size: 100% 100%;
+}
+
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+
+.search-section {
+    text-align: center;
+    padding: 24px 20px;
+}
+
+#searchInput {
+    width: 320px;
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+#searchInput:focus {
+    border-color: orange;
+}
+
+
+.title {
+    text-align: center;
+    margin: 20px 0 10px;
+    font-size: 24px;
+}
+
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    width: 230px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    background: white;
+    transition: box-shadow 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.card img:hover {
+    transform: translateY(-4px);
+}
+
+.card h3 {
+    margin: 10px 0 4px;
+    font-size: 16px;
+}
+
+.card span {
+    font-size: 13px;
+    color: #666;
+}
+
+.card p {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 8px 0;
+    color: #111;
+}
+
+.card button {
+    background: orange;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    width: 100%;
+    margin-top: 6px;
+    transition: background 0.2s;
+}
+
+.card button:hover {
+    background: #e6950a;
+}
+
+
+.form-container {
+    width: 360px;
+    margin: 70px auto;
+    padding: 28px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background: white;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 22px;
+    font-size: 22px;
+}
+
+.field-group {
+    margin-bottom: 14px;
+}
+
+.field-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.field-group input:focus {
+    border-color: orange;
+}
+
+.error {
+    display: none;
+    color: #c0392b;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+#strength {
+    font-size: 12px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.show-password {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 14px;
+}
+
+.form-container button[type="submit"],
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    background: orange;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.form-container button:hover {
+    background: #e6950a;
+}
+
+.form-container p {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 13px;
+    color: #555;
+}
+
+.form-container p a {
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.cart-card {
+    width: 90%;
+    max-width: 500px;
+    margin: 14px auto;
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-radius: 10px;
+    background: white;
+}
+
+.cart-card h3 {
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+
+.cart-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 4px;
+}
+
+.cart-card button {
+    padding: 7px 16px;
+    margin: 5px 4px 0 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    background: #f5f5f5;
+    transition: background 0.2s;
+}
+
+.cart-card button:hover {
+    background: #ebebeb;
+}
+
+.cart-card button:last-child {
+    background: #fdecea;
+    color: #c0392b;
+    border-color: #f5c6cb;
+}
+
+.cart-card button:last-child:hover {
+    background: #f5c6cb;
+}
+
+.cart-footer {
+    text-align: center;
+    margin: 24px;
+}
+
+.cart-footer h2 {
+    margin-bottom: 14px;
+    font-size: 20px;
+}
+
+.cart-footer button {
+    background: orange;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cart-footer button:hover {
+    background: #e6950a;
+}
+
+.empty-cart {
+    text-align: center;
+    padding: 48px 20px;
+    color: #888;
+}
+
+.empty-cart p {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.empty-cart button {
+    background: orange;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+.order-card {
+    width: 90%;
+    max-width: 600px;
+    margin: 16px auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 12px;
+    background: white;
+}
+
+.order-card h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: orange;
+}
+
+.order-card p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.order-card ul {
+    margin: 10px 0 10px 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.order-card ul li {
+    margin-bottom: 4px;
+}
+
+
+#toast {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #111;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-size: 14px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 9999;
+    white-space: nowrap;
+}
+
+#toast.show {
+    opacity: 1;
+}
+
+.footer {
+    background: #111;
+    color: white;
+    padding: 30px 20px 0;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-box h2,
+.footer-box h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer-box p {
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 4px;
+}
+
+.footer-box a {
+    font-size: 13px;
+    color: #aaa;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.footer-box a:hover {
+    color: orange;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 14px 0;
+    border-top: 1px solid white;
+    font-size: 13px;
+    color: #888;
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links a {
+        display: inline-block;
+        margin: 6px 10px;
+    }
+
+    #searchInput {
+        width: 90%;
+    }
+
+    .form-container {
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+}

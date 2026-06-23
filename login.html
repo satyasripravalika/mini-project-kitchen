@@ -1,0 +1,37 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Crispy Kitchen</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>🍴 Login</h2>
+
+      <form id="loginForm" novalidate="">
+        <div class="field-group">
+          <input type="email" id="loginEmail" placeholder="Enter Email" />
+          <span class="error" id="emailError">Please enter a valid email</span>
+        </div>
+
+        <div class="field-group">
+          <input
+            type="password"
+            id="loginPassword"
+            placeholder="Enter Password"
+          />
+          <span class="error" id="passwordError"
+            >Password must be at least 6 characters</span
+          >
+        </div>
+
+        <button type="submit">Login</button>
+      </form>
+
+      <p>Don't have an account? <a href="register.html">Register</a></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

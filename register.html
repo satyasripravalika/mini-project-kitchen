@@ -1,0 +1,49 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - Crispy Kitchen</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>🍴 Register</h2>
+
+      <form id="registerForm" novalidate="">
+        <div class="field-group">
+          <input type="text" id="name" placeholder="Enter Name" />
+          <span class="error" id="nameError">Name is required</span>
+        </div>
+
+        <div class="field-group">
+          <input type="email" id="email" placeholder="Enter Email" />
+          <span class="error" id="emailError">Please enter a valid email</span>
+        </div>
+
+        <div class="field-group">
+          <input
+            type="password"
+            id="password"
+            placeholder="Strong Password"
+            minlength="8"
+          />
+          <span class="error" id="passwordError"
+            >Password must be at least 8 characters</span
+          >
+          <p id="strength"></p>
+        </div>
+
+        <div class="show-password">
+          <input type="checkbox" id="showPwd" onclick="togglePassword()" />
+          <label for="showPwd">Show Password</label>
+        </div>
+
+        <button type="submit">Register</button>
+      </form>
+
+      <p>Already have an account? <a href="login.html">Login</a></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

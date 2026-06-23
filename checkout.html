@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - Crispy Kitchen</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">🍴 Crispy Kitchen</div>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+          <a href="orders.html">Orders</a>
+          <a href="#" onclick="logout()">Logout</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="form-container">
+      <h2>Checkout</h2>
+
+      <form id="checkoutForm" novalidate="">
+        <div class="field-group">
+          <input type="text" id="customerName" placeholder="Full Name" />
+          <span class="error" id="nameError">Full name is required</span>
+        </div>
+
+        <div class="field-group">
+          <input type="text" id="address" placeholder="Delivery Address" />
+          <span class="error" id="addressError">Address is required</span>
+        </div>
+
+        <div class="field-group">
+          <input
+            type="tel"
+            id="phone"
+            placeholder="10-digit Mobile Number"
+            maxlength="10"
+          />
+          <span class="error" id="phoneError"
+            >Enter a valid 10-digit phone number</span
+          >
+        </div>
+
+        <button type="submit">Place Order</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

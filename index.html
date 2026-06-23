@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crispy Kitchen</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">🍴 Crispy Kitchen</div>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+          <a href="orders.html">Orders</a>
+          <a href="#" onclick="logout()">Logout</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Welcome To Crispy Kitchen</h1>
+      <p>Delicious South Indian Food</p>
+    </section>
+
+    <section class="search-section">
+      <input type="text" id="searchInput" placeholder="Search Food..." />
+    </section>
+
+    <h2 class="title" id="menu">Special Menu</h2>
+
+    <section class="menu-container">
+      <div class="card">
+        <img src="./images/images (2).jpg" alt="Dosa" />
+        <h3>Dosa</h3>
+        <span
+          >⭐⭐⭐⭐<br />
+          4.5 (200 Reviews)</span
+        >
+        <p>₹40</p>
+        <button onclick="addToCart('Dosa', 40)">Add To Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="./images/images (3).jpg" alt="Idly" />
+        <h3>Idly</h3>
+        <span>⭐⭐⭐⭐ <br />4.5 (150 Reviews)</span>
+        <p>₹20</p>
+        <button onclick="addToCart('Idly', 20)">Add To Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="./images/images (4).jpg" alt="Puri" />
+        <h3>Puri</h3>
+        <span>⭐⭐⭐⭐ <br />4.5 (190 Reviews)</span>
+        <p>₹30</p>
+        <button onclick="addToCart('Puri', 30)">Add To Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="./images/images (6).jpg" alt="Bonda" />
+        <h3>Bonda</h3>
+        <span>⭐⭐⭐⭐ <br />4.2 (102 Reviews)</span>
+        <p>₹25</p>
+        <button onclick="addToCart('Bonda', 25)">Add To Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="./images/image7.jpg" alt="Bonda" />
+        <h3>Vada</h3>
+        <span>⭐⭐⭐⭐ <br />4.7 (102 Reviews)</span>
+        <p>₹25</p>
+        <button onclick="addToCart('Vada', 25)">Add To Cart</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-box">
+          <h2>Crispy Kitchen</h2>
+          <p>Delicious food for everyone</p>
+        </div>
+        <div class="footer-box">
+          <h3>Location</h3>
+          <p>123 Food Street</p>
+          <p>Hyderabad, India</p>
+        </div>
+        <div class="footer-box">
+          <h3>Opening Hours</h3>
+          <p>Mon - Fri: 9AM - 10PM</p>
+          <p>Sat - Sun: 5AM - 10PM</p>
+        </div>
+        <div class="footer-box">
+          <h3>Follow Us</h3>
+          <a href="Instagram">Instragram</a><br />
+          <a href="Facebbok">facebook</a><br />
+          <a href="Youtube">Youtube</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Crispy Kitchen | All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
