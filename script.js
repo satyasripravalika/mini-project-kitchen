@@ -268,10 +268,10 @@ if (passwordInput) {
             strength.innerText = "Strong Password ✅";
             strength.style.color = "green";
         } else if (/(?=.*[A-Z])(?=.*[0-9])/.test(value) && value.length >= 8) {
-            strength.innerText = "Medium Password ⚠️";
+            strength.innerText = "Medium Password";
             strength.style.color = "orange";
         } else {
-            strength.innerText = "Weak Password ❌";
+            strength.innerText = "Weak Password ";
             strength.style.color = "red";
         }
     });
